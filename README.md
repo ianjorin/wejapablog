@@ -1,0 +1,2 @@
+# wejapablog
+Simple PHP blog
