@@ -1,3 +1,17 @@
+
+<?php 
+ini_set("log_errors", 1);
+ini_set("error_log", "php-error.log");
+error_log( "Hello, errors!" );
+ob_start();
+session_start();
+require_once('config/constants.php');
+require_once('functions.php');
+
+require_once('pdo_connection.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

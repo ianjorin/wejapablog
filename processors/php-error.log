@@ -1,0 +1,10 @@
+[05-Sep-2020 11:11:24 Europe/Berlin] Hello, errors!
+[05-Sep-2020 11:11:24 Europe/Berlin] PHP Warning:  require_once(pdo_connection.php): failed to open stream: No such file or directory in C:\xampp\htdocs\wejapa\wejapablog\processors\add-post.php on line 11
+[05-Sep-2020 11:11:24 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'pdo_connection.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wejapa\wejapablog\processors\add-post.php on line 11
+[05-Sep-2020 11:12:25 Europe/Berlin] Hello, errors!
+[05-Sep-2020 10:12:25 Africa/Lagos] PHP Warning:  Use of undefined constant MAX_ITEM_PICTURE_UPLOAD_SIZE - assumed 'MAX_ITEM_PICTURE_UPLOAD_SIZE' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\wejapa\wejapablog\processors\add-post.php on line 56
+[05-Sep-2020 11:25:12 Europe/Berlin] Hello, errors!
+[05-Sep-2020 10:25:12 Africa/Lagos] PHP Warning:  Use of undefined constant MAX_ITEM_PICTURE_UPLOAD_SIZE - assumed 'MAX_ITEM_PICTURE_UPLOAD_SIZE' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\wejapa\wejapablog\processors\add-post.php on line 56
+[05-Sep-2020 11:27:19 Europe/Berlin] Hello, errors!
+[05-Sep-2020 10:27:19 Africa/Lagos] PHP Warning:  Use of undefined constant MAX_ITEM_PICTURE_UPLOAD_SIZE - assumed 'MAX_ITEM_PICTURE_UPLOAD_SIZE' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\wejapa\wejapablog\processors\add-post.php on line 56
+[05-Sep-2020 11:29:15 Europe/Berlin] Hello, errors!
