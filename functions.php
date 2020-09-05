@@ -51,4 +51,14 @@ function go( $location = NULL ) {
 			exit;
 			
 			}
-	}
+    }
+    
+    function query($sql,$data){
+        global $database;
+        $result = $database->prepare($sql);
+        foreach($data as $key => $value){
+            $result->bindValue("$key",$value);
+            }
+        $result->execute();
+        return $result;
+        }
