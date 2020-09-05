@@ -42,7 +42,7 @@
                     echo  "<th scope='row'>$i</th>";
                     echo "<td>$data->author</td>";
                     echo "<td>$data->title </td>";
-                    echo "<td> <a href='edit-post?id=$data->id'><button type='button' class='btn btn-outline-success'>Edit</button>";
+                    echo "<td> <a href='edit-post?id=$data->id'><button type='button' class='btn btn-outline-success'>Edit</button><a>";
                     echo "<button type='button' class='btn btn-outline-danger'>Delete</button></td>";
                     echo "</tr>";
                     $i++;
