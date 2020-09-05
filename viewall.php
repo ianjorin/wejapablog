@@ -34,7 +34,7 @@
                     </tr>
 
                     <tr>
-                    <th scope="row">1</th>
+                    <th scope="row">2</th>
                     <td>Anjorin Israel</td>
                     <td>Understanding SQL and writing queries</td>
                     <td><button type="button" class="btn btn-outline-success">Edit</button>
