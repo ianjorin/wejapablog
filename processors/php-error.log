@@ -8,3 +8,7 @@
 [05-Sep-2020 11:27:19 Europe/Berlin] Hello, errors!
 [05-Sep-2020 10:27:19 Africa/Lagos] PHP Warning:  Use of undefined constant MAX_ITEM_PICTURE_UPLOAD_SIZE - assumed 'MAX_ITEM_PICTURE_UPLOAD_SIZE' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\wejapa\wejapablog\processors\add-post.php on line 56
 [05-Sep-2020 11:29:15 Europe/Berlin] Hello, errors!
+[05-Sep-2020 19:04:10 Europe/Berlin] Hello, errors!
+[05-Sep-2020 19:04:51 Europe/Berlin] Hello, errors!
+[05-Sep-2020 19:07:43 Europe/Berlin] Hello, errors!
+[05-Sep-2020 19:11:48 Europe/Berlin] Hello, errors!

@@ -1,4 +1,13 @@
-<?php require_once "includes/header.php" ?>
+<?php require_once "includes/header.php";
+ 
+ global $database;
+	
+ $sql = "SELECT * FROM posts
+ WHERE  deleted = 0   ORDER BY date DESC";
+ $result = $database->prepare($sql);
+ $result->execute();
+
+?>
 
 <div class="site-section">
   <div class="container">
@@ -25,13 +34,23 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>Anjorin Israel</td>
-                    <td>Improving as a young PHP  Developer </td>
-                    <td><button type="button" class="btn btn-outline-success">Edit</button>
-                    <button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr>
+                <?php if($result->rowCount()>0) {
+                    $i = 1;
+                    while($data = $result->fetch(PDO::FETCH_OBJ)){
+
+                    echo "<tr>";
+                    echo  "<th scope='row'>$i</th>";
+                    echo "<td>$data->author</td>";
+                    echo "<td>$data->title </td>";
+                    echo "<td> <a href='edit-post?id=$data->id'><button type='button' class='btn btn-outline-success'>Edit</button>";
+                    echo "<button type='button' class='btn btn-outline-danger'>Delete</button></td>";
+                    echo "</tr>";
+                    $i++;
+
+                    }
+                }
+                    ?>
+                    
 
                     <tr>
                     <th scope="row">2</th>

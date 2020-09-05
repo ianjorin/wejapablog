@@ -35,10 +35,7 @@
                         <label for="exampleFormControlInput1">Image</label>
                         <input type="file" name="main_picture" class="form-control" id="exampleFormControlInput1" placeholder="">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Date</label>
-                        <input type="date" name="date" class="form-control" id="exampleFormControlInput1" placeholder="Title of Post ">
-                    </div>
+                   
                     <div class = "form-group">
                     <button name="save" class="form-control btn-success">Save</button>
 

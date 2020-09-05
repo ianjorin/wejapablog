@@ -14,10 +14,10 @@
 		$name = trim($_POST['name']);
 		$title= trim($_POST['title']);
 		$content= trim($_POST['content']);
-	    $date = $_POST['date'];
+	   
 		
 
-		if(empty($name) || empty($title) || empty($content) || empty($date)  ){
+		if(empty($name) || empty($title) || empty($content)  ){
 			error('Please fill all required fields');
 			go();
         }
@@ -26,15 +26,15 @@
 	 
 		$database->beginTransaction();
 
-		$sql = "INSERT INTO posts( `author`, `title`, `content`,  `date`)
+		$sql = "INSERT INTO posts( `author`, `title`, `content`)
 		
-	    VALUES(:name, :title, :content, :date)";
+	    VALUES(:name, :title, :content)";
 	
 		$result = $database->prepare($sql);
 		$result->bindValue('name',$name,PDO::PARAM_STR);
 		$result->bindValue('title',$title,PDO::PARAM_STR);
 		$result->bindValue('content',$content,PDO::PARAM_STR);
-		$result->bindValue('date',$date,PDO::PARAM_STR);
+		
         $result->execute();
 
         $id = $database->lastInsertId();
