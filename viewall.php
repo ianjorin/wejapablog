@@ -42,8 +42,8 @@
                     echo  "<th scope='row'>$i</th>";
                     echo "<td>$data->author</td>";
                     echo "<td>$data->title </td>";
-                    echo "<td> <a href='edit-post?id=$data->id'><button type='button' class='btn btn-outline-success'>Edit</button>";
-                    echo "<button type='button' class='btn btn-outline-danger'>Delete</button></td>";
+                    echo "<td> <a href='edit-post?id=$data->id'><button type='button' class='btn btn-outline-success'>Edit</button><a>";
+                    echo "<button  type='button' data-id='$data->id' class='btn delete btn-outline-danger'>Delete</button></td>";
                     echo "</tr>";
                     $i++;
 
@@ -52,13 +52,7 @@
                     ?>
                     
 
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Anjorin Israel</td>
-                    <td>Understanding SQL and writing queries</td>
-                    <td><button type="button" class="btn btn-outline-success">Edit</button>
-                    <button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr>
+                    
                   
                 </tbody>
             </table>
@@ -72,3 +66,20 @@
 
 
 <?php require_once "includes/footer.php" ?>
+
+<script>
+
+$('.delete').click(function(e) {
+		
+		var id = $(this).attr('data-id');
+		
+        if(confirm("Are you sure you wish to delete the post ")) 
+	 {
+        window.location = 'processors/delete-post.php?id='+id;
+     }			
+		
+				
+			
+        
+    });
+</script>

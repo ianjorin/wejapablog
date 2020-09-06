@@ -12,3 +12,22 @@
 [05-Sep-2020 19:04:51 Europe/Berlin] Hello, errors!
 [05-Sep-2020 19:07:43 Europe/Berlin] Hello, errors!
 [05-Sep-2020 19:11:48 Europe/Berlin] Hello, errors!
+[05-Sep-2020 21:18:58 Europe/Berlin] Hello, errors!
+[05-Sep-2020 21:19:47 Europe/Berlin] Hello, errors!
+[05-Sep-2020 21:20:40 Europe/Berlin] Hello, errors!
+[05-Sep-2020 21:22:40 Europe/Berlin] Hello, errors!
+[05-Sep-2020 20:22:40 Africa/Lagos] PHP Notice:  Undefined variable: result2 in C:\xampp\htdocs\wejapa\wejapablog\processors\update-post.php on line 81
+[05-Sep-2020 20:22:40 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on null in C:\xampp\htdocs\wejapa\wejapablog\processors\update-post.php:81
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\wejapa\wejapablog\processors\update-post.php on line 81
+[05-Sep-2020 21:24:02 Europe/Berlin] Hello, errors!
+[05-Sep-2020 20:24:02 Africa/Lagos] PHP Notice:  Undefined variable: result2 in C:\xampp\htdocs\wejapa\wejapablog\processors\update-post.php on line 81
+[05-Sep-2020 20:24:02 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on null in C:\xampp\htdocs\wejapa\wejapablog\processors\update-post.php:81
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\wejapa\wejapablog\processors\update-post.php on line 81
+[05-Sep-2020 21:24:35 Europe/Berlin] Hello, errors!
+[05-Sep-2020 21:26:50 Europe/Berlin] Hello, errors!
+[05-Sep-2020 21:28:35 Europe/Berlin] Hello, errors!
+[05-Sep-2020 21:28:55 Europe/Berlin] Hello, errors!
