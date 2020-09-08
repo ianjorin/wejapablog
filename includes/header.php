@@ -7,7 +7,6 @@ ob_start();
 session_start();
 require_once('config/constants.php');
 require_once('functions.php');
-
 require_once('pdo_connection.php');
 
 ?>
@@ -30,6 +29,8 @@ require_once('pdo_connection.php');
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
+  
+
 
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -65,7 +66,15 @@ require_once('pdo_connection.php');
             <nav class="site-navigation" role="navigation">
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block mb-0">
                 <li><a href="index">Home</a></li>
+                <?php if(!$user->checkLoginStatus()){ ?>
+                <li >
+                    <a class="link" href="login">
+                        Login/Sign up
+                    </a>
+                </li>
+                <?php } else { ?>
                 <li><a href="admin">Admin</a></li>
+                <?php } ?>
 
                 
               </ul>

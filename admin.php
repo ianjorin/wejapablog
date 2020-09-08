@@ -19,6 +19,7 @@
           <?php alert() ?>
         </div>
             <form action="processors/add-post.php" method="post" enctype="multipart/form-data" >
+
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Name of Author</label>
                         <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Full Name of Author">
@@ -27,9 +28,9 @@
                         <label for="exampleFormControlInput1">Title of Post</label>
                         <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Title of Post ">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" >
                         <label for="exampleFormControlTextarea1">Main Content of Post</label>
-                        <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea  class="form-control" id='content' name="content" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Image</label>
@@ -50,3 +51,10 @@
 
 
 <?php require_once "includes/footer.php" ?>
+
+<script src="ckeditor/ckeditor.js"></script>
+
+<script>
+    CKEDITOR.replace('content');
+</script>
+

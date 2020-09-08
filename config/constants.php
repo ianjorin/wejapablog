@@ -1,10 +1,10 @@
 <?php 
 // Database Constants
-define("DB_HOST", "127.0.0.1");
-define("DB_SERVER", "localhost");
-define("DB_USER", "root");
-define("DB_PASS", "");
-define("DB_NAME", "wejapablog");
+define("DB_HOST", "remotemysql.com");
+//define("DB_SERVER", "remotemysql.com");
+define("DB_USER", "RksSkvkZuu");
+define("DB_PASS", "mQeN6LRZos");
+define("DB_NAME", "RksSkvkZuu");
 define("CRYPT_KEY", "4486d3528378bb3fece448d3903bcaa823b7cd09");
 
 define("ADMIN_CATEGORY_PATH", "../../../festiveoccassionsnew/new/uploads");

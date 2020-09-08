@@ -39,7 +39,10 @@ foreach($detail as $row) {
             echo "</div>";
               
             echo "<p>";
-            echo substr($name[3], 0, 150);
+            $string = $name[3];
+            $string = strip_tags($string);
+            $string = trim($string);
+            echo substr($string, 0, 150);
             echo  "</p>";
             echo "<p><a href='single?id=$name[4]'>Read More</a></p>";
             echo "</div>";
