@@ -1,7 +1,7 @@
 <?php 
 // Database Constants
 define("DB_HOST", "remotemysql.com");
-//define("DB_SERVER", "remotemysql.com");
+define("DB_SERVER", "remotemysql.com");
 define("DB_USER", "RksSkvkZuu");
 define("DB_PASS", "mQeN6LRZos");
 define("DB_NAME", "RksSkvkZuu");
