@@ -17,6 +17,9 @@ define("SITE_TITLE", "Wejapablog");
 
 define("MAX_ITEM_PICTURE_UPLOAD_SIZE", "900000");
 
+define('ROOT_PATH', realpath(dirname(__FILE__)));
+define('BASE_URL', 'https://floating-scrubland-44764.herokuapp.com/');
+
 
 
 
