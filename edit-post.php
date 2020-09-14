@@ -67,3 +67,9 @@ $details = query($sql,array(
 
 
 <?php require_once "includes/footer.php" ?>
+
+<script src="ckeditor/ckeditor.js"></script>
+
+<script>
+    CKEDITOR.replace('content');
+</script>

@@ -338,3 +338,95 @@ Stack trace:
 #1 {main}
   thrown in C:\xampp\htdocs\wejapa\wejapablog\includes\header.php on line 69
 [09-Sep-2020 11:57:38 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:24:28 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:24:34 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:28:07 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:28:15 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:29:29 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:31:35 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:33:00 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:33:14 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:34:39 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:43:20 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:44:36 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:45:40 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:49:28 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:50:01 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:52:43 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:53:45 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:54:59 Europe/Berlin] Hello, errors!
+[09-Sep-2020 16:57:48 Europe/Berlin] Hello, errors!
+[09-Sep-2020 17:04:31 Europe/Berlin] Hello, errors!
+[09-Sep-2020 17:17:14 Europe/Berlin] Hello, errors!
+[09-Sep-2020 17:19:10 Europe/Berlin] Hello, errors!
+[09-Sep-2020 17:20:28 Europe/Berlin] Hello, errors!
+[09-Sep-2020 17:21:11 Europe/Berlin] Hello, errors!
+[09-Sep-2020 17:24:06 Europe/Berlin] Hello, errors!
+[09-Sep-2020 17:24:37 Europe/Berlin] Hello, errors!
+[09-Sep-2020 17:25:13 Europe/Berlin] Hello, errors!
+[09-Sep-2020 17:32:18 Europe/Berlin] Hello, errors!
+[10-Sep-2020 10:49:53 Europe/Berlin] Hello, errors!
+[10-Sep-2020 10:49:53 Europe/Berlin] Hello, errors!
+[10-Sep-2020 09:49:54 Africa/Lagos] PHP Notice:  Undefined variable: database in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php on line 125
+[10-Sep-2020 09:49:54 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function setAttribute() on null in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php:125
+Stack trace:
+#0 C:\xampp\htdocs\wejapa\wejapablog\includes\header.php(10): require_once()
+#1 C:\xampp\htdocs\wejapa\wejapablog\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php on line 125
+[10-Sep-2020 09:49:55 Africa/Lagos] PHP Notice:  Undefined variable: database in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php on line 125
+[10-Sep-2020 09:49:55 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function setAttribute() on null in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php:125
+Stack trace:
+#0 C:\xampp\htdocs\wejapa\wejapablog\includes\header.php(10): require_once()
+#1 C:\xampp\htdocs\wejapa\wejapablog\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php on line 125
+[10-Sep-2020 10:50:09 Europe/Berlin] Hello, errors!
+[10-Sep-2020 09:50:09 Africa/Lagos] PHP Notice:  Undefined variable: database in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php on line 125
+[10-Sep-2020 09:50:09 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function setAttribute() on null in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php:125
+Stack trace:
+#0 C:\xampp\htdocs\wejapa\wejapablog\includes\header.php(10): require_once()
+#1 C:\xampp\htdocs\wejapa\wejapablog\signin.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php on line 125
+[10-Sep-2020 10:50:12 Europe/Berlin] Hello, errors!
+[10-Sep-2020 09:50:12 Africa/Lagos] PHP Notice:  Undefined variable: database in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php on line 125
+[10-Sep-2020 09:50:12 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function setAttribute() on null in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php:125
+Stack trace:
+#0 C:\xampp\htdocs\wejapa\wejapablog\includes\header.php(10): require_once()
+#1 C:\xampp\htdocs\wejapa\wejapablog\login.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php on line 125
+[10-Sep-2020 10:50:17 Europe/Berlin] Hello, errors!
+[10-Sep-2020 09:50:17 Africa/Lagos] PHP Notice:  Undefined variable: database in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php on line 125
+[10-Sep-2020 09:50:17 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to a member function setAttribute() on null in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php:125
+Stack trace:
+#0 C:\xampp\htdocs\wejapa\wejapablog\includes\header.php(10): require_once()
+#1 C:\xampp\htdocs\wejapa\wejapablog\index.php(1): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\wejapa\wejapablog\pdo_connection.php on line 125
+[14-Sep-2020 21:50:20 Europe/Berlin] Hello, errors!
+[14-Sep-2020 21:50:31 Europe/Berlin] Hello, errors!
+[14-Sep-2020 21:50:36 Europe/Berlin] Hello, errors!
+[14-Sep-2020 21:54:49 Europe/Berlin] Hello, errors!
+[14-Sep-2020 21:55:50 Europe/Berlin] Hello, errors!
+[14-Sep-2020 22:57:58 Europe/Berlin] Hello, errors!
+[14-Sep-2020 22:58:27 Europe/Berlin] Hello, errors!
+[14-Sep-2020 22:59:37 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:01:34 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:01:38 Europe/Berlin] Hello, errors!
+[14-Sep-2020 22:01:38 Africa/Lagos] PHP Warning:  Use of undefined constant SALT - assumed 'SALT' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 262
+[14-Sep-2020 22:01:38 Africa/Lagos] PHP Warning:  Use of undefined constant SALT - assumed 'SALT' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 262
+[14-Sep-2020 23:03:01 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:03:04 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:03:07 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:03:13 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:03:20 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:04:05 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:05:18 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:05:22 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:06:45 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:07:41 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:07:45 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:14:18 Europe/Berlin] Hello, errors!
+[14-Sep-2020 23:14:22 Europe/Berlin] Hello, errors!

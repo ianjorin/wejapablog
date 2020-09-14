@@ -33,7 +33,7 @@ final class ConnectionManagerPDO
     }
 
     /**
-     * @param $method
+     * @param $method 
      * @param $args
      * @return mixed
      * @throws Exception
@@ -115,10 +115,11 @@ try{
 $database = new ConnectionManagerPDO("mysql:host=" . DB_SERVER . ";dbname=" .DB_NAME . "",'' . DB_USER . '','' .DB_PASS . '');
 
 //$database = new PDO("mysql:host=DB_SERVER;dbname=compsci",'DB_USER','DB_PASS');
-} catch(PDOException $e)
+} 
+
+catch(PDOException $e)
 {
-echo $e->getMessage();
-    
+    echo $e->getMessage();    
 }
 
 
