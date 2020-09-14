@@ -352,7 +352,7 @@ public function checkLogin($post){
 		if(!empty($email) && !empty($password)){
 			
 			$hash_cost_factor = (defined('HASH_COST_FACTOR') ? HASH_COST_FACTOR : null);
-			$sql="SELECT id, email,first_name,password,active FROM users WHERE email=:email";
+			$sql="SELECT id, email,firstname,password,active FROM users WHERE email=:email";
 			$result=$database->prepare($sql);
 			$result->bindValue('email',$email,PDO::PARAM_STR);
 			$result->execute();
@@ -376,7 +376,7 @@ public function checkLogin($post){
 								$_SESSION['rmt_address'] = $this->hashSessionData($_SERVER['REMOTE_ADDR']);
 								
 			
-								go('../../cart');
+								go('../index');
 				
 		
 
