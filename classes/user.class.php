@@ -118,7 +118,7 @@ class User
 				
 				if(!empty($user_id)&& !empty($token) && !empty($hash)){
 
-				   $sql = "SELECT id,email,first_name FROM users WHERE id = :user_id AND user_rememberme_token = :user_rememberme_token AND user_rememberme_token IS NOT NULL";
+				 $sql = "SELECT id,email,first_name FROM users WHERE id = :user_id AND user_rememberme_token = :user_rememberme_token AND user_rememberme_token IS NOT NULL";
 				$sth = $database->prepare($sql);
 
                     $sth->bindValue(':user_id', $user_id, PDO::PARAM_INT);
@@ -416,6 +416,13 @@ public function checkLogin($post){
 					$_SESSION['reg_error'] = 'Please fill all required fields';
 					go();
 				}
+
+				if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+					$_SESSION['reg_error'] = "Invalid email address";
+					go();
+				   }
+
+				
 			$hash_cost_factor = (defined('HASH_COST_FACTOR') ? HASH_COST_FACTOR : null);
 			$user_password_hash = password_hash($password, PASSWORD_DEFAULT, array('cost' => $hash_cost_factor));
 
@@ -429,14 +436,14 @@ public function checkLogin($post){
 				}
 				
 				//$database->beginTransaction();
-				$sql="INSERT INTO users(`first_name`,`last_name`,`email`,`phone`,`password`,`active`) VALUES(:first_name,:last_name,:email,:phone,:password,:active)";
+				$sql="INSERT INTO users(`firstname`,`lastname`,`email`,`phone`,`password`,`active`) VALUES(:first_name,:last_name,:email,:phone,:password,:active)";
 				$result=$database->prepare($sql);
 				$result->bindValue('first_name',$first_name,PDO::PARAM_STR);
 		 		$result->bindValue('last_name',$last_name,PDO::PARAM_STR);
-				 $result->bindValue('email',$email,PDO::PARAM_STR);
+				$result->bindValue('email',$email,PDO::PARAM_STR);
 		 		$result->bindValue('phone',$phone,PDO::PARAM_STR);
-				 $result->bindValue('password',$user_password_hash,PDO::PARAM_STR);
-				  $result->bindValue('active',1,PDO::PARAM_INT);
+				$result->bindValue('password',$user_password_hash,PDO::PARAM_STR);
+			    $result->bindValue('active',1,PDO::PARAM_INT);
 				$result->execute();
 				$id=$database->lastInsertId();
 				
@@ -448,8 +455,8 @@ public function checkLogin($post){
 					$_SESSION['logged_in'] = true;
 					$_SESSION['userAgent'] = $this->hashSessionData($_SERVER['HTTP_USER_AGENT']);
 					$_SESSION['rmt_address'] = $this->hashSessionData($_SERVER['REMOTE_ADDR']);
-					require_once '../notifications/welcome.php';
-					go('../../cart');
+					
+			     	go('../index');
 				
 
 			}else{
@@ -743,7 +750,10 @@ public function checkLogin($post){
 		
 
 
-    }
+	}
+	
+
+
 
 
 
