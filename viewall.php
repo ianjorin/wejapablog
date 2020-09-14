@@ -1,11 +1,16 @@
 <?php require_once "includes/header.php";
  
  global $database;
-	
+
+ if(isset($_SESSION['user_id']))
+{
+
+$id = $_SESSION['user_id'];
  $sql = "SELECT * FROM posts
- WHERE  deleted = 0   ORDER BY date DESC";
+ WHERE  deleted = 0 AND userid = $id   ORDER BY date DESC";
  $result = $database->prepare($sql);
  $result->execute();
+}
 
 ?>
 
