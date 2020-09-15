@@ -1,4 +1,8 @@
-<?php require_once "includes/header.php" ?>
+<?php require_once "includes/header.php" ;
+    if(!$user->checkLoginStatus()){
+       go('index');
+     }
+?>
 
 <div class="site-section">
   <div class="container">
