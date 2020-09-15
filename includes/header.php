@@ -77,7 +77,7 @@ $user = new User;
                 </li>
                 <?php } else { ?>
                 <li><a href="admin">Admin</a></li>
-                <li><a href="logout">Admin</a></li>
+                <li><a href="logout">logout</a></li>
                 <?php } ?>
 
                 
