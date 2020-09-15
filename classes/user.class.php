@@ -221,8 +221,8 @@ class User
 
 		public function checkLoginStatus($go = ''){
 
-			if(isset($_SESSION['userAgent']) && isset($_SESSION['user_id'])){
-						if (!empty($_SESSION['user_id'])  && ($_SESSION['userAgent'] == $this->hashSessionData($_SERVER['HTTP_USER_AGENT'])) && ($this->hashSessionData($_SERVER['REMOTE_ADDR']) == $_SESSION['rmt_address'])) {
+			if( isset($_SESSION['user_id'])){
+						if (!empty($_SESSION['user_id']) ) {
 						$this->loginWithSessionData();
 						return true;
 					}elseif(isset($_COOKIE['rememberme'])) {
@@ -372,8 +372,8 @@ public function checkLogin($post){
 
 								$_SESSION['email'] = $email;
 								$_SESSION['logged_in'] = true;
-								$_SESSION['userAgent'] = $this->hashSessionData($_SERVER['HTTP_USER_AGENT']);
-								$_SESSION['rmt_address'] = $this->hashSessionData($_SERVER['REMOTE_ADDR']);
+								//$_SESSION['userAgent'] = $this->hashSessionData($_SERVER['HTTP_USER_AGENT']);
+								//$_SESSION['rmt_address'] = $this->hashSessionData($_SERVER['REMOTE_ADDR']);
 								
 			
 								go('../index');
@@ -453,8 +453,8 @@ public function checkLogin($post){
 					$_SESSION['email'] = $email;
 					$_SESSION['first_name'] = $first_name;
 					$_SESSION['logged_in'] = true;
-					$_SESSION['userAgent'] = $this->hashSessionData($_SERVER['HTTP_USER_AGENT']);
-					$_SESSION['rmt_address'] = $this->hashSessionData($_SERVER['REMOTE_ADDR']);
+					//$_SESSION['userAgent'] = $this->hashSessionData($_SERVER['HTTP_USER_AGENT']);
+					//$_SESSION['rmt_address'] = $this->hashSessionData($_SERVER['REMOTE_ADDR']);
 					
 			     	go('../index');
 				
