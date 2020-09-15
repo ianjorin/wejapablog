@@ -30,7 +30,7 @@ foreach($detail as $row) {
 
             echo "<div class='col-lg-4 mb-4'>";
             echo "<div class='entry2'>";
-            echo "<a href='single?id=$name[4]'> <img src='uploads/products$details->path' alt='Image' height="370px" width="207px" class='img-fluid rounded;'></a>";
+            echo "<a href='single?id=$name[4]'> <img src='uploads/products$details->path' alt='Image' class='img-fluid rounded;'></a>";
             echo "<div class='excerpt'>";
             echo "<h2><a href='single?id=$name[4]'>$name[1]</a></h2>";
             echo "<div class='post-meta align-items-center text-left clearfix'>";
