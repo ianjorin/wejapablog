@@ -14,6 +14,7 @@
 		$name = trim($_POST['name']);
 		$title= trim($_POST['title']);
 		$content= trim($_POST['content']);
+		$id = $_SESSION['user_id'];
 	   
 		
 
@@ -26,14 +27,15 @@
 	 
 		$database->beginTransaction();
 
-		$sql = "INSERT INTO posts( `author`, `title`, `content`)
+		$sql = "INSERT INTO posts( `author`, `title`, `content` , `userid`)
 		
-	    VALUES(:name, :title, :content)";
+	    VALUES(:name, :title, :content ,:userid)";
 	
 		$result = $database->prepare($sql);
 		$result->bindValue('name',$name,PDO::PARAM_STR);
 		$result->bindValue('title',$title,PDO::PARAM_STR);
 		$result->bindValue('content',$content,PDO::PARAM_STR);
+		$result->bindValue('userid',$id,PDO::PARAM_INT);
 		
         $result->execute();
 
