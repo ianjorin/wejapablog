@@ -47,13 +47,11 @@
 		$media_status = true;
 		$picture = new Photograph;
 		
-		$sql= "INSERT INTO post_gallery(`post_id`,`path`) VALUES";
-		
 		if($_FILES['main_picture']['size'] == 0){
-				$database->rollBack();
-				error('Please upload main picture');
-               	go();
-			}	
+			$database->rollBack();
+			error('Please upload main picture');
+			   go();
+		}
 			
 		if($_FILES['main_picture']['size'] > MAX_ITEM_PICTURE_UPLOAD_SIZE){
 				$database->rollBack();
@@ -72,10 +70,9 @@
 			
 					
 			$new_file_name = str_replace(ADMIN_ITEM_PATH,'',$file_name);
-			
-			$sql .="($id,'$new_file_name')";
-			
-			
+
+			$sql= "INSERT INTO post_gallery(`post_id`,`path`) VALUES($id,'$new_file_name')";	
+		
 		$result2  = $database->query($sql);
 			
 		if($result->rowCount() > 0 && $result2->rowCount() > 0   ){
