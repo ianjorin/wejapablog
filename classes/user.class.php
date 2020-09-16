@@ -472,7 +472,117 @@ public function checkLogin($post){
 			}
 
     }
+	
+	
+	public function resetpassword(){
 
+		global $database;
+		$email = strtolower(trim($_POST['email']));
+
+		if(empty($email)){
+			$_SESSION['reg_error'] = 'Please fill in email';
+			go();
+		}
+
+		if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+			$_SESSION['reg_error'] = "Invalid email address";
+			go();
+		   }
+
+	if (!empty($email)){
+	
+		$status=$this->checkUserExist($email);
+
+		if(!$status->rowCount()>0){
+			$_SESSION['reg_error'] = 'A user with the email number exists';
+			go();
+		}
+		
+		$token = bin2hex(random_bytes(50));
+		
+		//$database->beginTransaction();
+		$sql="INSERT INTO password_reset(`email`,`token`) VALUES(:email,:token)";
+		$result=$database->prepare($sql);
+		$result->bindValue('email',$email,PDO::PARAM_STR);
+		 $result->bindValue('token',$token,PDO::PARAM_STR);
+		$result->execute();
+		
+		$id=$database->lastInsertId();
+		
+		if($result->rowCount()>0){
+			
+			$to = $email;
+			$subject = "Reset your password on wejapablog.com";
+			$msg = "Hi there, click on this <a href=\"new-pass?token=" . $token . "\">link</a> to reset your password on our site";
+			$msg = wordwrap($msg,70);
+			$headers = "From: israelwhiz@gmail.com";
+			mail($to, $subject, $msg, $headers);
+			
+			 go('../pending.php?email=' . $email. '');
+		
+
+	}else{
+		$_SESSION['reg_error'] = 'An error occurred. Please try again';
+		die;
+	}
+
+	}else {
+
+					$_SESSION['reg_error'] = 'An error occurred. Please try again';
+					die;
+
+	}
+
+	}
+
+
+	public function newpassword(){
+
+
+
+		global $database;
+
+		$token = $_GET['token'];
+
+		$password = trim($_POST['password']);
+		$password_conf = trim ($_POST['password_conf']);
+
+		$hash_cost_factor = (defined('HASH_COST_FACTOR') ? HASH_COST_FACTOR : null);
+		
+		if(empty($password) || empty($password_conf)){
+			$_SESSION['reset_error'] = 'Please fill all required fields';
+			go();
+		}
+
+		if ($password !== $password_conf){
+			$_SESSION['reset_error'] = 'passwords do not match';
+			go();
+		}
+
+		
+
+		$sql = "SELECT email FROM password_reset WHERE token= :token LIMIT 1";
+		$result=$database->prepare($sql);
+		$result->bindValue('email',$token,PDO::PARAM_STR);
+		$result->execute();
+		 
+		if($result->rowCount() > 0){
+
+		$user_password_hash = password_hash($password, PASSWORD_DEFAULT, array('cost' => $hash_cost_factor));
+
+		$sql = "UPDATE users SET password =:password WHERE email =:email";
+		$result=$database->prepare($sql);
+		$result->bindValue('email',$email,PDO::PARAM_STR);
+		$result->bindValue('password',$user_password_hash,PDO::PARAM_STR);
+		$result->execute();
+
+		if($result){
+			go('../login');
+		}
+
+		}
+
+	}
 	
 
 
