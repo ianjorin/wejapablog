@@ -34,7 +34,7 @@ $body='<!DOCTYPE html>
         Please Click on the link below to reset your password.
 
         </p>
-        <a href="http://localhost/wejapa/wejapablog/new-pass?token='. $token . '">Reset your Password</a>
+        <a href="http://floating-scrubland-44764.herokuapp.com/new-pass?token='. $token . '">Reset your Password</a>
     </div>
     
     <script src="" async defer></script>
