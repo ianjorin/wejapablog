@@ -27,3 +27,81 @@
 [16-Sep-2020 17:55:37 Europe/Berlin] Hello, errors!
 [16-Sep-2020 16:55:37 Africa/Lagos] PHP Warning:  require_once(../emailController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
 [16-Sep-2020 16:55:37 Africa/Lagos] PHP Fatal error:  require_once(): Failed opening required '../emailController.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
+[16-Sep-2020 18:08:04 Europe/Berlin] Hello, errors!
+[16-Sep-2020 17:08:04 Africa/Lagos] PHP Warning:  require_once(../processors/emailController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
+[16-Sep-2020 17:08:04 Africa/Lagos] PHP Fatal error:  require_once(): Failed opening required '../processors/emailController.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
+[16-Sep-2020 18:10:15 Europe/Berlin] Hello, errors!
+[16-Sep-2020 17:10:15 Africa/Lagos] PHP Warning:  require_once(../processors/emailController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
+[16-Sep-2020 17:10:15 Africa/Lagos] PHP Fatal error:  require_once(): Failed opening required '../processors/emailController.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
+[16-Sep-2020 18:11:46 Europe/Berlin] Hello, errors!
+[16-Sep-2020 17:11:46 Africa/Lagos] PHP Warning:  require_once(../processors/emailController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
+[16-Sep-2020 17:11:46 Africa/Lagos] PHP Fatal error:  require_once(): Failed opening required '../processors/emailController.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
+[16-Sep-2020 18:11:47 Europe/Berlin] Hello, errors!
+[16-Sep-2020 17:11:47 Africa/Lagos] PHP Warning:  require_once(../processors/emailController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
+[16-Sep-2020 17:11:47 Africa/Lagos] PHP Fatal error:  require_once(): Failed opening required '../processors/emailController.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
+[16-Sep-2020 18:12:07 Europe/Berlin] Hello, errors!
+[16-Sep-2020 18:13:05 Europe/Berlin] Hello, errors!
+[16-Sep-2020 17:13:05 Africa/Lagos] PHP Warning:  require_once(../../processors/emailController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
+[16-Sep-2020 17:13:05 Africa/Lagos] PHP Fatal error:  require_once(): Failed opening required '../../processors/emailController.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wejapa\wejapablog\classes\user.class.php on line 4
+[16-Sep-2020 18:26:07 Europe/Berlin] Hello, errors!
+[16-Sep-2020 18:26:14 Europe/Berlin] Hello, errors!
+[16-Sep-2020 18:26:18 Europe/Berlin] Hello, errors!
+[16-Sep-2020 18:29:51 Europe/Berlin] Hello, errors!
+[16-Sep-2020 18:31:18 Europe/Berlin] Hello, errors!
+[16-Sep-2020 18:32:15 Europe/Berlin] Hello, errors!
+[16-Sep-2020 18:33:15 Europe/Berlin] Hello, errors!
+[16-Sep-2020 18:36:54 Europe/Berlin] Hello, errors!
+[16-Sep-2020 18:37:50 Europe/Berlin] Hello, errors!
+[16-Sep-2020 18:38:00 Europe/Berlin] Hello, errors!
+[16-Sep-2020 18:40:59 Europe/Berlin] Hello, errors!
+[16-Sep-2020 22:47:18 Europe/Berlin] Hello, errors!
+[16-Sep-2020 22:47:28 Europe/Berlin] Hello, errors!
+[16-Sep-2020 22:47:32 Europe/Berlin] Hello, errors!
+[16-Sep-2020 22:50:19 Europe/Berlin] Hello, errors!
+[16-Sep-2020 22:50:26 Europe/Berlin] Hello, errors!
+[16-Sep-2020 22:50:46 Europe/Berlin] Hello, errors!
+[16-Sep-2020 22:51:29 Europe/Berlin] Hello, errors!
+[16-Sep-2020 22:52:00 Europe/Berlin] Hello, errors!
+[16-Sep-2020 22:56:37 Europe/Berlin] Hello, errors!
+[16-Sep-2020 22:58:09 Europe/Berlin] Hello, errors!
+[16-Sep-2020 22:59:52 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:00:01 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:00:26 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:00:53 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:01:13 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:01:30 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:01:34 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:02:47 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:02:51 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:02:59 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:03:09 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:03:18 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:03:35 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:11:13 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:11:16 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:11:34 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:11:40 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:11:45 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:11:48 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:11:50 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:12:00 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:12:03 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:12:04 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:12:07 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:12:16 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:13:31 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:13:53 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:14:09 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:14:23 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:14:32 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:20:04 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:20:09 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:20:24 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:20:48 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:20:58 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:21:08 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:27:05 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:27:16 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:31:46 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:32:10 Europe/Berlin] Hello, errors!
+[16-Sep-2020 23:32:28 Europe/Berlin] Hello, errors!
