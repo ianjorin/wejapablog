@@ -1,9 +1,12 @@
-<?php require_once "includes/header.php"?>
+<?php require_once "includes/header.php";
+
+$token = $_GET['token'];
+?>
 
 <link rel="stylesheet" href="css/mystyle.css">
 
 <body class="text-center">
-    <form class="form-signin" action="processors/new-pass.php" method="post">
+    <form class="form-signin" action="processors/new-pass?<? echo $token ?>" method="post">
     <?php if(isset($_SESSION['reset_error']) && !empty($_SESSION['reset_error'])) { ?> 
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <?php
