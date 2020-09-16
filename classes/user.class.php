@@ -1,5 +1,7 @@
 <?php
 
+
+require_once "emailController.php";
 /**
 
  * handles the user login/logout/session
@@ -511,12 +513,7 @@ public function checkLogin($post){
 		
 		if($result->rowCount()>0){
 			
-			$to = $email;
-			$subject = "Reset your password on wejapablog.com";
-			$msg = "Hi there, click on this <a href=\"new-pass?token=" . $token . "\">link</a> to reset your password on our site";
-			$msg = wordwrap($msg,70);
-			$headers = "From: israelwhiz@gmail.com";
-			mail($to, $subject, $msg, $headers);
+		    sendPasswordResetLink($email,$token);
 			
 			 go('../pending.php?email=' . $email. '');
 		
