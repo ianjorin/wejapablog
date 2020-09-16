@@ -1,7 +1,7 @@
 <?php
 
 
-require_once "emailController.php";
+require_once "../emailController.php";
 /**
 
  * handles the user login/logout/session
