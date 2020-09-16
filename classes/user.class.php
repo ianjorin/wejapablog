@@ -1,7 +1,4 @@
 <?php
-
-
-require_once "../processors/emailController.php";
 /**
 
  * handles the user login/logout/session
@@ -496,7 +493,7 @@ public function checkLogin($post){
 		$status=$this->checkUserExist($email);
 
 		if(!$status->rowCount()>0){
-			$_SESSION['reg_error'] = 'A user with the email number exists';
+			$_SESSION['reg_error'] = 'No user with these email';
 			go();
 		}
 		
@@ -539,7 +536,7 @@ public function checkLogin($post){
 
 		global $database;
 
-		$token = $_GET['token'];
+		$token = $_POST['token'];
 
 		$password = trim($_POST['password']);
 		$password_conf = trim ($_POST['password_conf']);
@@ -560,20 +557,24 @@ public function checkLogin($post){
 
 		$sql = "SELECT email FROM password_reset WHERE token= :token LIMIT 1";
 		$result=$database->prepare($sql);
-		$result->bindValue('email',$token,PDO::PARAM_STR);
+		$result->bindValue('token',$token,PDO::PARAM_STR);
 		$result->execute();
 		 
 		if($result->rowCount() > 0){
 
+		$data=$result->fetch(PDO::FETCH_ASSOC);
+		
+		$email = $data['email'];
+
 		$user_password_hash = password_hash($password, PASSWORD_DEFAULT, array('cost' => $hash_cost_factor));
 
-		$sql = "UPDATE users SET password =:password WHERE email =:email";
+		$sql = "UPDATE users SET password= :password WHERE email= :email";
 		$result=$database->prepare($sql);
 		$result->bindValue('email',$email,PDO::PARAM_STR);
 		$result->bindValue('password',$user_password_hash,PDO::PARAM_STR);
 		$result->execute();
 
-		if($result){
+		if($result->rowCount() > 0){
 			go('../login');
 		}
 

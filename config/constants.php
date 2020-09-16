@@ -12,8 +12,8 @@
 //define("DB_PASS", "");
 //define("DB_NAME", "wejapablog");
 define("CRYPT_KEY", "4486d3528378bb3fece448d3903bcaa823b7cd09");
-define('MAIL','israelwhiz@gmail');
-define('PASSWORD_MAIL','izzywizzy');
+define("MAIL","israelwhiz@gmail.com");
+define("PASSWORD_MAIL","izzywizzy");
 
 
 define("ADMIN_CATEGORY_PATH", "../../../festiveoccassionsnew/new/uploads");
