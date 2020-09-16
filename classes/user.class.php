@@ -1,7 +1,4 @@
 <?php
-
-
-
 /**
 
  * handles the user login/logout/session
