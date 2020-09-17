@@ -72,6 +72,7 @@ foreach($detail as $row) {
   
    <?php require_once "includes/footer.php" ?>
 
+
    <script>
      function search(name){
        console.log(name);
@@ -98,3 +99,4 @@ foreach($detail as $row) {
        dataViewer.innerHTML = " ";
      }
    </script>
+

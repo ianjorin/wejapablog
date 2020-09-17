@@ -22,7 +22,8 @@
       <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <span>Dont have an account?<a href="signup">Sign up</a></span>
+      <span>Dont have an account?<a href="signup">Sign up</a></span> <br>
+      <span> <a href="enter-email">forgot password?</a></span>
       <div class="checkbox mb-3">
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
