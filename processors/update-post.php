@@ -88,9 +88,8 @@
 				   	go();
                }else{
 				   $database->rollBack();
-				   die('xsxsx');
-				   error();
-                	go('viewall');
+				   error("An Error Occured");
+                	go();
 				}
 
             
