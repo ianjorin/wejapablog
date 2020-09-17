@@ -63,11 +63,11 @@ function go( $location = NULL ) {
         return $result;
 		}
 		
-		 function searchData($name){
+		 function searchData($name,$id){
 			global $database;
-			$sql = "SELECT id,title,content FROM posts WHERE title LIKE :title";
+			$sql = "SELECT id,title,content FROM posts WHERE title LIKE :title AND userid= :userid";
 			$result = $database->prepare($sql);
-			$result->execute(["title" => "%" . $name . "%"]);
+			$result->execute(["title" => "%" . $name . "%"],["userid" => $id]);
 			$data = $result->fetchAll(PDO::FETCH_ASSOC);
 			return $data;
 		}

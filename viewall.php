@@ -16,6 +16,12 @@ $id = $_SESSION['user_id'];
 
 <div class="site-section">
   <div class="container">
+      <div class="mb-3">
+     
+      <!-- <form class="form-inline src-form" action="processors/search.php" method="POST">
+         <input class="form-control src mr-sm-2" name="name" id="searchBox" type="text" oninput=search(this.value) placeholder="Search Here..." aria-label="Search" autofocus>
+      </form> -->
+      </div>
       <div class="row">
       <div class="col-lg-3">
             <div class="card text-black" style="width: 18rem;">
@@ -68,9 +74,15 @@ $id = $_SESSION['user_id'];
   </div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 
 <?php require_once "includes/footer.php" ?>
+
+
+<script src="js/main2.js"></script>
+
 
 <script>
 
@@ -88,3 +100,4 @@ $('.delete').click(function(e) {
         
     });
 </script>
+

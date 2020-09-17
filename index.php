@@ -18,11 +18,11 @@ foreach($detail as $row) {
           <div class="col-12 d-flex">
             <h2>Recent Posts</h2>
 
-            <form class="form-inline src-form" action="processors/search.php" method="POST">
+            <!-- <form class="form-inline src-form" action="processors/search.php" method="POST">
               <input class="form-control src mr-sm-2" name="name" id="searchBox" type="text" oninput=search(this.value) placeholder="Search Here..." aria-label="Search" autofocus>
               
               
-            </form>
+            </form> -->
           </div>
         </div>
 
@@ -97,6 +97,10 @@ foreach($detail as $row) {
        const dataViewer = document.getElementById('dataViewer');
 
        dataViewer.innerHTML = " ";
+
+       for(let i = 0; i < data.lenght; i++){
+         
+       }
      }
    </script>
 

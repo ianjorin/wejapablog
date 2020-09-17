@@ -9,6 +9,7 @@ require_once('../pdo_connection.php');
 
 global $database;
 $name = $_POST['name'];
+$id = $_POST['id'];
 
 $data= searchData($name);
 
