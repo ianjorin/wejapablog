@@ -61,4 +61,13 @@ function go( $location = NULL ) {
             }
         $result->execute();
         return $result;
-        }
+		}
+		
+		 function searchData($name){
+			global $database;
+			$sql = "SELECT id,title,content FROM posts WHERE title LIKE :title";
+			$result = $database->prepare($sql);
+			$result->execute(["title" => "%" . $name . "%"]);
+			$data = $result->fetchAll(PDO::FETCH_ASSOC);
+			return $data;
+		}

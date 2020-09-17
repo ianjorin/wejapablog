@@ -4,7 +4,7 @@
 
 <body class="text-center">
 
-<
+
     <form class="form-signin" action="processors/log-in.php" method="post">
     <?php if(isset($_SESSION['error']) && !empty($_SESSION['error'])) { ?> 
     <div class="alert alert-warning alert-dismissible fade show" role="alert">

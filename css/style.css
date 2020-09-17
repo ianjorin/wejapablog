@@ -1245,3 +1245,11 @@ label{
   color:#000;
   font-weight: bold;
 }
+
+input.form-control.src.mr-sm-2 {
+  width: 300px;
+}
+
+form.src-form.form-inline {
+  margin-left: 500px;
+}
